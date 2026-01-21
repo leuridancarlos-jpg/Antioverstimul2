@@ -9,9 +9,11 @@ class AntiScrollService : AccessibilityService() {
         
         // Scant op woorden die duiden op verslavende korte video's
         val triggerButtons = rootNode.findAccessibilityNodeInfosByText("Abonneer")
-            .plus(rootNode.findAccessibilityNodeInfosByText("Like"))
-            .plus(rootNode.findAccessibilityNodeInfosByText("Shorts"))
-
+            .plus(rootNode.findAccessibilityNodeInfosByText("Like")
+            .plus(rootNode.findAccessibilityNodeInfosByText("Shorts")
+.plus(rootNode.findAccessibilityNodeInfosByText("TikTok") 
+.plus(rootNode.findAccessibilityNodeInfosByText("Instagram") 
+.plus(rootNode.findAccessibilityNodeInfosByText("Reels"))
         if (triggerButtons.isNotEmpty()) {
             // Actie: stuur de gebruiker direct terug
             performGlobalAction(GLOBAL_ACTION_BACK)

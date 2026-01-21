@@ -1,8 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.antioverstimul.pro">
-    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
-
-    <application android:label="Antioverstimul Pro">
-        <activity android:name=".MainActivity" android:exported="true">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <application android:label="Antioverstimul">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
