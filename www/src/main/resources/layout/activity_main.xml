@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"> <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E0E0E0"
+        android:padding="10dp">
+
+        <Button android:id="@+id/btnPrivacy" android:text="Privé" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="10sp"/>
+        <Button android:id="@+id/btnSettings" android:text="Instel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textSize="10sp"/>
+        <Button android:id="@+id/btnStats" android:text="Stats" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textSize="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here to enter the flow state. Reclaim your attention."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/flowButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="START FLOW"
+            android:backgroundTint="#FF0000" 
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</RelativeLayout>
